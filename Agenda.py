@@ -1,3 +1,4 @@
+# Aqui criamos uma lista, para salvar o nome e contatos propostos e uma funçao para salvar.
 contato=[]
 def salvar():
     nome = input('Digite o nome: ')
@@ -6,7 +7,7 @@ def salvar():
     contato.append(nomes)
     print('Contato salvo com sucesso!\n\n')
     menu()
-    
+#Criamos uma funçao para listar os contatos salvos     
 def listar():
     for nome, numero in contato:
         print(f'Nome: {nome}')
@@ -14,7 +15,7 @@ def listar():
     menu()
 
 
-
+#Aqui esta a nossa funçao do menu, para lista algum contato, salvar ou encerrar 
 def menu():
     
     print('*** MENU ***')
