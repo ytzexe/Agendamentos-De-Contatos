@@ -1,3 +1,4 @@
+-- Aqui criamos uma lista, para salvar o nome e contatos propostos e uma funçao para salvar.
 contato = {}
 
 function salvar()
@@ -11,6 +12,7 @@ function salvar()
     menu()
 end
 
+-- Criamos uma funçao para listar os contatos salvos 
 function listar()
     for i, v in ipairs(contato) do
         print('Nome: ' .. v[1])
@@ -19,6 +21,7 @@ function listar()
     menu()
 end
 
+-- Aqui esta a nossa funçao do menu, para lista algum contato, salvar ou encerrar 
 function menu()
     print('*** MENU ***')
     print('1 - Salvar contato')
